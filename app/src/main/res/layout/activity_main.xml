@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.antonioejemplos.adivinarnumero.MainActivity">
+
+    <ImageView
+        android:id="@+id/imagen_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/images" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/Adivina"
+        android:textSize="22sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/txtEntrada"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimary">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pulsar"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txtEntrada"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <Button
+        android:id="@+id/btnReiniciar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Volver a jugar"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/btnAceptar"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <TextView
+        android:id="@+id/lblSalida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnAceptar" />
+
+
+
+
+
+</RelativeLayout>
